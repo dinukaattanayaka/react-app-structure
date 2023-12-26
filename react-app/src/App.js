@@ -1,27 +1,38 @@
+import './App.css';
 function UserManager(){
   return(
-      <>
+      <div className='wrapper'>
         <User/>
         <User/>
         <User/>
         <User/>
-      </>
+      </div>
   );
 }
 const User =()=>{
   return(
-      <div>
-        <Avatar/>
-        <UserName/>
-        <Designation/>
-        <Salary/>
+      <div className='user-outer'>
+          <Avatar/>
+          <UserData/>
       </div>
   );
 }
 const Avatar =()=>{
   return(
+      <div className='avatar-outer'>
       <h1>Avatar</h1>
+     </div>
   );
+}
+const UserData =()=>{
+    return(
+        <div className='user-data'>
+            <UserName/>
+            <Designation/>
+            <Salary/>
+        </div>
+
+    );
 }
 const UserName =()=>{
   return(
