@@ -33,7 +33,7 @@ const User =(props)=>{
   return(
       <div className='user-outer'>
           <Avatar avatar = {avatar}/>
-          <UserData name={name} country={country} runs={runs}/>
+          <UserData name={name} country={country} runs={runs}>best cricketers in the world.</UserData>
       </div>
   );
 }
@@ -45,12 +45,15 @@ const Avatar =({avatar})=>{
      </div>
   );
 }
-const UserData =({name, country, runs})=>{
+const UserData =({name, country, runs, children})=>{
     return(
         <div className='user-data'>
             <UserName name ={name}/>
             <Country country ={country}/>
             <Runs runs = {runs}/>
+            <p>
+                {children}
+            </p>
         </div>
 
     );
