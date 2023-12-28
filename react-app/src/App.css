@@ -24,9 +24,20 @@ body{
     width: 250px;
     height: 100%;
     border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f1;
+}
+.avatar-outer img{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+
 }
 .user-data{
     flex: 1;
     border: 1px solid red;
     padding: 10px;
 }
+

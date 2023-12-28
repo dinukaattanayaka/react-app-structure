@@ -20,7 +20,8 @@ const User =()=>{
 const Avatar =()=>{
   return(
       <div className='avatar-outer'>
-      <h1>Avatar</h1>
+      <img src= "https://4.bp.blogspot.com/-Uo8xiNd56fU/ThKcz-IWW2I/AAAAAAAAMus/K2utCrUZIaA/s1600/Sanath-Jayasuriya
+      -raises.jpg"/>
      </div>
   );
 }
@@ -28,25 +29,29 @@ const UserData =()=>{
     return(
         <div className='user-data'>
             <UserName/>
-            <Designation/>
-            <Salary/>
+            <Country/>
+            <Runs/>
         </div>
 
     );
 }
 const UserName =()=>{
+    const inlineStyle={
+        color:'#130f40'
+    }
   return(
-      <h1>UserName</h1>
+      <h1 style = {inlineStyle}>Sanath jayasuriya.</h1>
   );
 }
-const Designation =()=>{
+const Country =()=>{
     return(
-        <h1>Designation</h1>
+        <h2 style = {{fontStyle:'italic'}}>Sri Lanka</h2>
     );
 }
-const Salary =()=>{
+const runs='12000 runs'
+const Runs =()=>{
     return(
-        <h1>Salary</h1>
+        <h3 style = {{fontStyle:'italic'}}>{runs}</h3>
     );
 }
 export default UserManager;
